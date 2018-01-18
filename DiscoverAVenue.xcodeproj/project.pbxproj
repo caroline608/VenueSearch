@@ -11,11 +11,17 @@
 		9CB7572DCF55606721DBC307 /* Pods_DiscoverAVenueTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4DB063F45C7583FD74D777 /* Pods_DiscoverAVenueTests.framework */; };
 		A7D178A6BCE60914A2483BD5 /* Pods_DiscoverAVenue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053ED8BE4EF58421ED0E6180 /* Pods_DiscoverAVenue.framework */; };
 		CF3CC26A200E99DC00F93B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CC269200E99DC00F93B83 /* AppDelegate.swift */; };
-		CF3CC26C200E99DC00F93B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CC26B200E99DC00F93B83 /* ViewController.swift */; };
 		CF3CC271200E99DC00F93B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3CC270200E99DC00F93B83 /* Assets.xcassets */; };
 		CF3CC274200E99DC00F93B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3CC272200E99DC00F93B83 /* LaunchScreen.storyboard */; };
 		CF3CC27F200E99DC00F93B83 /* DiscoverAVenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CC27E200E99DC00F93B83 /* DiscoverAVenueTests.swift */; };
 		CF3CC28A200E99DC00F93B83 /* DiscoverAVenueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CC289200E99DC00F93B83 /* DiscoverAVenueUITests.swift */; };
+		DBB305D520114A5100CDF2FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305D420114A5100CDF2FE /* MapViewController.swift */; };
+		DBB305D720114A7000CDF2FE /* UserCreatedCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */; };
+		DBB305DA20114BBD00CDF2FE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305D920114BBD00CDF2FE /* MapView.swift */; };
+		DBB305DC20114C0700CDF2FE /* VenueCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305DB20114C0700CDF2FE /* VenueCollectionViewCell.swift */; };
+		DBB305DE20114DB300CDF2FE /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305DD20114DB300CDF2FE /* Venue.swift */; };
+		DBB305E020114DD000CDF2FE /* VenueAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305DF20114DD000CDF2FE /* VenueAPIClient.swift */; };
+		DBB305E220114DDF00CDF2FE /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305E120114DDF00CDF2FE /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +53,6 @@
 		9A3D286A2D596CE34051422D /* Pods-DiscoverAVenueUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscoverAVenueUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiscoverAVenueUITests/Pods-DiscoverAVenueUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF3CC266200E99DC00F93B83 /* DiscoverAVenue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoverAVenue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3CC269200E99DC00F93B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF3CC26B200E99DC00F93B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF3CC270200E99DC00F93B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF3CC273200E99DC00F93B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3CC275200E99DC00F93B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +62,13 @@
 		CF3CC285200E99DC00F93B83 /* DiscoverAVenueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoverAVenueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3CC289200E99DC00F93B83 /* DiscoverAVenueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAVenueUITests.swift; sourceTree = "<group>"; };
 		CF3CC28B200E99DC00F93B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB305D420114A5100CDF2FE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreatedCollectionsViewController.swift; sourceTree = "<group>"; };
+		DBB305D920114BBD00CDF2FE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DBB305DB20114C0700CDF2FE /* VenueCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCollectionViewCell.swift; sourceTree = "<group>"; };
+		DBB305DD20114DB300CDF2FE /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		DBB305DF20114DD000CDF2FE /* VenueAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIClient.swift; sourceTree = "<group>"; };
+		DBB305E120114DDF00CDF2FE /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				CF3CC269200E99DC00F93B83 /* AppDelegate.swift */,
-				CF3CC26B200E99DC00F93B83 /* ViewController.swift */,
+				DBB305E42011505800CDF2FE /* Views */,
+				DBB305E52011507000CDF2FE /* Models */,
+				DBB305E32011504800CDF2FE /* Services */,
+				DBB305D820114AA400CDF2FE /* ViewControllers */,
 				CF3CC270200E99DC00F93B83 /* Assets.xcassets */,
 				CF3CC272200E99DC00F93B83 /* LaunchScreen.storyboard */,
 				CF3CC275200E99DC00F93B83 /* Info.plist */,
@@ -160,6 +175,41 @@
 				CF3CC28B200E99DC00F93B83 /* Info.plist */,
 			);
 			path = DiscoverAVenueUITests;
+			sourceTree = "<group>";
+		};
+		DBB305D820114AA400CDF2FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBB305D420114A5100CDF2FE /* MapViewController.swift */,
+				DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBB305E32011504800CDF2FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DBB305DF20114DD000CDF2FE /* VenueAPIClient.swift */,
+				DBB305E120114DDF00CDF2FE /* NetworkHelper.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DBB305E42011505800CDF2FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBB305DB20114C0700CDF2FE /* VenueCollectionViewCell.swift */,
+				DBB305D920114BBD00CDF2FE /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBB305E52011507000CDF2FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBB305DD20114DB300CDF2FE /* Venue.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,7 +504,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3CC26C200E99DC00F93B83 /* ViewController.swift in Sources */,
+				DBB305E220114DDF00CDF2FE /* NetworkHelper.swift in Sources */,
+				DBB305E020114DD000CDF2FE /* VenueAPIClient.swift in Sources */,
+				DBB305D520114A5100CDF2FE /* MapViewController.swift in Sources */,
+				DBB305DE20114DB300CDF2FE /* Venue.swift in Sources */,
+				DBB305DA20114BBD00CDF2FE /* MapView.swift in Sources */,
+				DBB305DC20114C0700CDF2FE /* VenueCollectionViewCell.swift in Sources */,
+				DBB305D720114A7000CDF2FE /* UserCreatedCollectionsViewController.swift in Sources */,
 				CF3CC26A200E99DC00F93B83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
