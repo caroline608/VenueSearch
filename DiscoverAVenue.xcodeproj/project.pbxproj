@@ -22,6 +22,16 @@
 		DBB305DE20114DB300CDF2FE /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305DD20114DB300CDF2FE /* Venue.swift */; };
 		DBB305E020114DD000CDF2FE /* VenueAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305DF20114DD000CDF2FE /* VenueAPIClient.swift */; };
 		DBB305E220114DDF00CDF2FE /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305E120114DDF00CDF2FE /* NetworkHelper.swift */; };
+		DBB305E8201154F300CDF2FE /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305E7201154F300CDF2FE /* SearchResultsTableViewController.swift */; };
+		DBB305EA201156A100CDF2FE /* SearchResultsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305E9201156A100CDF2FE /* SearchResultsTableView.swift */; };
+		DBB305EC201156EE00CDF2FE /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305EB201156EE00CDF2FE /* VenueTableViewCell.swift */; };
+		DBB305EE201157C600CDF2FE /* UserCreatedCollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305ED201157C600CDF2FE /* UserCreatedCollectionsView.swift */; };
+		DBB305F020115A6500CDF2FE /* SearchResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305EF20115A6500CDF2FE /* SearchResultDetailViewController.swift */; };
+		DBB305F220115A7700CDF2FE /* SearchResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305F120115A7700CDF2FE /* SearchResultDetailView.swift */; };
+		DBB305F420115DC100CDF2FE /* AddVenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305F320115DC100CDF2FE /* AddVenueViewController.swift */; };
+		DBB305F620115DDC00CDF2FE /* AddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305F520115DDC00CDF2FE /* AddCollectionViewController.swift */; };
+		DBB305F820115DFB00CDF2FE /* AddVenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305F720115DFB00CDF2FE /* AddVenueView.swift */; };
+		DBB305FA20115E0D00CDF2FE /* AddCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305F920115E0D00CDF2FE /* AddCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +79,16 @@
 		DBB305DD20114DB300CDF2FE /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DBB305DF20114DD000CDF2FE /* VenueAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIClient.swift; sourceTree = "<group>"; };
 		DBB305E120114DDF00CDF2FE /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		DBB305E7201154F300CDF2FE /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		DBB305E9201156A100CDF2FE /* SearchResultsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableView.swift; sourceTree = "<group>"; };
+		DBB305EB201156EE00CDF2FE /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		DBB305ED201157C600CDF2FE /* UserCreatedCollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreatedCollectionsView.swift; sourceTree = "<group>"; };
+		DBB305EF20115A6500CDF2FE /* SearchResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailViewController.swift; sourceTree = "<group>"; };
+		DBB305F120115A7700CDF2FE /* SearchResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailView.swift; sourceTree = "<group>"; };
+		DBB305F320115DC100CDF2FE /* AddVenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVenueViewController.swift; sourceTree = "<group>"; };
+		DBB305F520115DDC00CDF2FE /* AddCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewController.swift; sourceTree = "<group>"; };
+		DBB305F720115DFB00CDF2FE /* AddVenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVenueView.swift; sourceTree = "<group>"; };
+		DBB305F920115E0D00CDF2FE /* AddCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,13 +167,11 @@
 		CF3CC268200E99DC00F93B83 /* DiscoverAVenue */ = {
 			isa = PBXGroup;
 			children = (
-				CF3CC269200E99DC00F93B83 /* AppDelegate.swift */,
+				DBB305E6201152E800CDF2FE /* Supporting Files */,
 				DBB305E42011505800CDF2FE /* Views */,
 				DBB305E52011507000CDF2FE /* Models */,
 				DBB305E32011504800CDF2FE /* Services */,
 				DBB305D820114AA400CDF2FE /* ViewControllers */,
-				CF3CC270200E99DC00F93B83 /* Assets.xcassets */,
-				CF3CC272200E99DC00F93B83 /* LaunchScreen.storyboard */,
 				CF3CC275200E99DC00F93B83 /* Info.plist */,
 			);
 			path = DiscoverAVenue;
@@ -181,7 +199,11 @@
 			isa = PBXGroup;
 			children = (
 				DBB305D420114A5100CDF2FE /* MapViewController.swift */,
+				DBB305F320115DC100CDF2FE /* AddVenueViewController.swift */,
+				DBB305E7201154F300CDF2FE /* SearchResultsTableViewController.swift */,
+				DBB305F520115DDC00CDF2FE /* AddCollectionViewController.swift */,
 				DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */,
+				DBB305EF20115A6500CDF2FE /* SearchResultDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,7 +221,13 @@
 			isa = PBXGroup;
 			children = (
 				DBB305DB20114C0700CDF2FE /* VenueCollectionViewCell.swift */,
+				DBB305E9201156A100CDF2FE /* SearchResultsTableView.swift */,
 				DBB305D920114BBD00CDF2FE /* MapView.swift */,
+				DBB305EB201156EE00CDF2FE /* VenueTableViewCell.swift */,
+				DBB305ED201157C600CDF2FE /* UserCreatedCollectionsView.swift */,
+				DBB305F120115A7700CDF2FE /* SearchResultDetailView.swift */,
+				DBB305F720115DFB00CDF2FE /* AddVenueView.swift */,
+				DBB305F920115E0D00CDF2FE /* AddCollectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +238,16 @@
 				DBB305DD20114DB300CDF2FE /* Venue.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DBB305E6201152E800CDF2FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF3CC269200E99DC00F93B83 /* AppDelegate.swift */,
+				CF3CC270200E99DC00F93B83 /* Assets.xcassets */,
+				CF3CC272200E99DC00F93B83 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,14 +542,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB305F620115DDC00CDF2FE /* AddCollectionViewController.swift in Sources */,
+				DBB305F420115DC100CDF2FE /* AddVenueViewController.swift in Sources */,
+				DBB305F820115DFB00CDF2FE /* AddVenueView.swift in Sources */,
+				DBB305EE201157C600CDF2FE /* UserCreatedCollectionsView.swift in Sources */,
 				DBB305E220114DDF00CDF2FE /* NetworkHelper.swift in Sources */,
+				DBB305F220115A7700CDF2FE /* SearchResultDetailView.swift in Sources */,
 				DBB305E020114DD000CDF2FE /* VenueAPIClient.swift in Sources */,
 				DBB305D520114A5100CDF2FE /* MapViewController.swift in Sources */,
 				DBB305DE20114DB300CDF2FE /* Venue.swift in Sources */,
 				DBB305DA20114BBD00CDF2FE /* MapView.swift in Sources */,
+				DBB305FA20115E0D00CDF2FE /* AddCollectionView.swift in Sources */,
+				DBB305F020115A6500CDF2FE /* SearchResultDetailViewController.swift in Sources */,
+				DBB305E8201154F300CDF2FE /* SearchResultsTableViewController.swift in Sources */,
 				DBB305DC20114C0700CDF2FE /* VenueCollectionViewCell.swift in Sources */,
 				DBB305D720114A7000CDF2FE /* UserCreatedCollectionsViewController.swift in Sources */,
+				DBB305EA201156A100CDF2FE /* SearchResultsTableView.swift in Sources */,
 				CF3CC26A200E99DC00F93B83 /* AppDelegate.swift in Sources */,
+				DBB305EC201156EE00CDF2FE /* VenueTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

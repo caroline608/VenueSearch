@@ -12,6 +12,7 @@ class MapViewController: UIViewController {
     
     var venues = [Venue]() {
         didSet {
+            // test printing out venues found
             for v in venues {
                 print(v.name)
             }
