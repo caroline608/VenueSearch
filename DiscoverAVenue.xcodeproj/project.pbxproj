@@ -201,9 +201,9 @@
 				DBB305D420114A5100CDF2FE /* MapViewController.swift */,
 				DBB305F320115DC100CDF2FE /* AddVenueViewController.swift */,
 				DBB305E7201154F300CDF2FE /* SearchResultsTableViewController.swift */,
+				DBB305EF20115A6500CDF2FE /* SearchResultDetailViewController.swift */,
 				DBB305F520115DDC00CDF2FE /* AddCollectionViewController.swift */,
 				DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */,
-				DBB305EF20115A6500CDF2FE /* SearchResultDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -220,12 +220,12 @@
 		DBB305E42011505800CDF2FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DBB305DB20114C0700CDF2FE /* VenueCollectionViewCell.swift */,
 				DBB305E9201156A100CDF2FE /* SearchResultsTableView.swift */,
-				DBB305D920114BBD00CDF2FE /* MapView.swift */,
 				DBB305EB201156EE00CDF2FE /* VenueTableViewCell.swift */,
-				DBB305ED201157C600CDF2FE /* UserCreatedCollectionsView.swift */,
 				DBB305F120115A7700CDF2FE /* SearchResultDetailView.swift */,
+				DBB305DB20114C0700CDF2FE /* VenueCollectionViewCell.swift */,
+				DBB305D920114BBD00CDF2FE /* MapView.swift */,
+				DBB305ED201157C600CDF2FE /* UserCreatedCollectionsView.swift */,
 				DBB305F720115DFB00CDF2FE /* AddVenueView.swift */,
 				DBB305F920115E0D00CDF2FE /* AddCollectionView.swift */,
 			);
