@@ -10,26 +10,41 @@ import UIKit
 
 class SearchResultDetailViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    let detailView = SearchResultDetailView()
+    private var venue: Venue!
+    init(venue: Venue, image: UIImage) {
+        super.init(nibName: nil, bundle: nil)
+        //        set fellow
+        self.venue = venue
+        detailView.configureDetailView(venue: venue, image: image)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nil)
     }
-    */
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .clear
+        view.addSubview(detailView)
+        //    setup dismiss button
+        detailView.dismissModalButton.addTarget(self, action: #selector(dismissModalView), for: .touchUpInside)
+        detailView.addButtonInContainerView.addTarget(self, action: #selector(addVenue), for: .touchUpInside)
+    }
+    
+    
+    @objc func dismissModalView() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func addVenue() {
+    }
+    
 }
+
