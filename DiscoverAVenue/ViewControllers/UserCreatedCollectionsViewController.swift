@@ -29,13 +29,20 @@ class UserCreatedCollectionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUpView()
+    }
+    
+    func setUpView() {
         view.backgroundColor = .yellow
         navigationItem.title = "My Collections"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
-        
-        
-        
         
         //Add Initial View
         view.addSubview(userCreatedCollectionsView)
@@ -43,13 +50,23 @@ class UserCreatedCollectionsViewController: UIViewController {
         //Set Up Delegates
         userCreatedCollectionsView.collectionView.delegate = self
         userCreatedCollectionsView.collectionView.dataSource = self
-
-        
     }
+    
+    
     
     @objc func addTapped() {
         // Present AddCollectionViewController
         print("Present AddCollectionViewController")
+        
+        let addCollectionVC = AddCollectionViewController()
+        
+        let addCollectionViewWithNavController = UINavigationController(rootViewController: addCollectionVC)
+        
+        addCollectionViewWithNavController.modalTransitionStyle = .coverVertical
+        addCollectionViewWithNavController.modalPresentationStyle = .overCurrentContext // This presents the view and keeps the tab bar
+        
+        //addCollectionViewWithNavController.modalPresentationStyle = .overfullScreen // This covers the tabs at the bottom of the screen
+        present(addCollectionViewWithNavController,animated: true, completion: nil)
         
         
     }
@@ -90,6 +107,8 @@ extension UserCreatedCollectionsViewController: UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionsCustomCollectionViewCell", for: indexPath) as! CollectionsCustomCollectionViewCell
         
+        //cell.spinner.isHidden = false
+        //cell.spinner.startAnimating()
         cell.collectionImageView.image = #imageLiteral(resourceName: "placeholder")
         cell.collectionNameLabel.text = "IndexPath : \(indexPath.row)"
         

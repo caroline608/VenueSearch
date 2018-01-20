@@ -11,8 +11,6 @@ import UIKit
 class UserCreatedCollectionsView: UIView {
 
     // Collection View
-    // Constrained to the safe area
-    // Two cells per row spacing style
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: frame, collectionViewLayout: layout)

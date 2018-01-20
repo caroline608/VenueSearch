@@ -11,6 +11,7 @@ import SnapKit
 
 class CollectionsCustomCollectionViewCell: UICollectionViewCell {
     
+    // ImageView
     lazy var collectionImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "placeholder")
@@ -18,6 +19,7 @@ class CollectionsCustomCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
+    // Name Label
     lazy var collectionNameLabel: UILabel = {
        let label = UILabel()
         label.adjustsFontSizeToFitWidth = true
@@ -28,9 +30,28 @@ class CollectionsCustomCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    //lazy var spinner:
+    // Spinner
+    lazy var spinner: UIActivityIndicatorView = {
+        let sp = UIActivityIndicatorView()
+        sp.activityIndicatorViewStyle = .gray
+        //sp.isHidden = true // Make visible directly before the IMAGE API call for the cell
+        sp.hidesWhenStopped = true // Automatically goes invisible when it stops
+        if sp.isHidden == false {
+            sp.startAnimating()
+        }
+        
+        return sp
+    }()
     
-    //lazy var a round imageview that has a plus button in it.
+    // Plus Sign Image View
+    lazy var plusSignImageView: UIImageView = {
+        let plusSign = UIImageView()
+        plusSign.image = #imageLiteral(resourceName: "plus")
+        plusSign.contentMode = .scaleAspectFit
+        plusSign.isHidden = true //Starts off hidden
+        return plusSign
+    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,6 +71,8 @@ class CollectionsCustomCollectionViewCell: UICollectionViewCell {
     private func setupViews() {
         addSubview(collectionImageView)
         addSubview(collectionNameLabel)
+        addSubview(spinner)
+        addSubview(plusSignImageView)
         setupVenueImageView()
     }
     
@@ -67,6 +90,17 @@ class CollectionsCustomCollectionViewCell: UICollectionViewCell {
             make.leading.equalTo(self.snp.leading)
             make.trailing.equalTo(self.snp.trailing)
             make.height.equalTo(self.snp.height).multipliedBy(0.15)
+        }
+        
+        spinner.snp.makeConstraints { (make) -> Void in
+            make.center.equalTo(collectionImageView.snp.center)
+            make.edges.equalTo(collectionImageView.snp.edges)
+        }
+        
+        plusSignImageView.snp.makeConstraints { (make) -> Void in
+            make.center.equalTo(collectionImageView.snp.center)
+            make.height.equalTo(collectionImageView.snp.height).multipliedBy(0.5)
+            make.width.equalTo(collectionImageView.snp.width).multipliedBy(0.5)
         }
         
     }

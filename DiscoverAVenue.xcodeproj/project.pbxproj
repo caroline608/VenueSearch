@@ -15,6 +15,7 @@
 		CF3CC274200E99DC00F93B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3CC272200E99DC00F93B83 /* LaunchScreen.storyboard */; };
 		CF3CC27F200E99DC00F93B83 /* DiscoverAVenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CC27E200E99DC00F93B83 /* DiscoverAVenueTests.swift */; };
 		CF3CC28A200E99DC00F93B83 /* DiscoverAVenueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CC289200E99DC00F93B83 /* DiscoverAVenueUITests.swift */; };
+		DB0507782013F0A2007AC890 /* ModalSavedVenuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0507772013F0A2007AC890 /* ModalSavedVenuesView.swift */; };
 		DBB305D520114A5100CDF2FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305D420114A5100CDF2FE /* MapViewController.swift */; };
 		DBB305D720114A7000CDF2FE /* UserCreatedCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */; };
 		DBB305DA20114BBD00CDF2FE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB305D920114BBD00CDF2FE /* MapView.swift */; };
@@ -73,6 +74,7 @@
 		CF3CC285200E99DC00F93B83 /* DiscoverAVenueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoverAVenueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3CC289200E99DC00F93B83 /* DiscoverAVenueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverAVenueUITests.swift; sourceTree = "<group>"; };
 		CF3CC28B200E99DC00F93B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0507772013F0A2007AC890 /* ModalSavedVenuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSavedVenuesView.swift; sourceTree = "<group>"; };
 		DBB305D420114A5100CDF2FE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DBB305D620114A7000CDF2FE /* UserCreatedCollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreatedCollectionsViewController.swift; sourceTree = "<group>"; };
 		DBB305D920114BBD00CDF2FE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				DBB305D920114BBD00CDF2FE /* MapView.swift */,
 				DBB305EB201156EE00CDF2FE /* VenueTableViewCell.swift */,
 				DBB305ED201157C600CDF2FE /* UserCreatedCollectionsView.swift */,
+				DB0507772013F0A2007AC890 /* ModalSavedVenuesView.swift */,
 				DBB305F120115A7700CDF2FE /* SearchResultDetailView.swift */,
 				DBB305F720115DFB00CDF2FE /* AddVenueView.swift */,
 				DBB305F920115E0D00CDF2FE /* AddCollectionView.swift */,
@@ -547,6 +550,7 @@
 			files = (
 				DBB305F620115DDC00CDF2FE /* AddCollectionViewController.swift in Sources */,
 				DBB305F420115DC100CDF2FE /* AddVenueViewController.swift in Sources */,
+				DB0507782013F0A2007AC890 /* ModalSavedVenuesView.swift in Sources */,
 				DBB305F820115DFB00CDF2FE /* AddVenueView.swift in Sources */,
 				DBB305EE201157C600CDF2FE /* UserCreatedCollectionsView.swift in Sources */,
 				DBC0F5EE2012DD87003B19AC /* CollectionsCustomCollectionViewCell.swift in Sources */,
